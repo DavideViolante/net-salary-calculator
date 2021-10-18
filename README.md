@@ -6,5 +6,4 @@ Calcolo stipendio netto per lavoro dipendente a partire dalla RAL.
 
 ### Run
 1. Clone this repo
-2. Edit `index.js`
-3. Run `npm start`
+2. Run `node index.js <SALARY>`. Example: `node index.js 50000`

@@ -3,7 +3,7 @@ function main() {
     'Liguria', 'Lombardia', 'Marche', 'Molise', 'Piemonte', 'Puglia', 'Sardegna', 'Sicilia', 'Toscana', 'Trentino Alto Adige',
     'Umbria', 'Valle d\'Aosta', 'Veneto', 'Provincia di Bolzano'];
   // EDIT BELOW THIS LINE -------------
-  const reddito = 42000;
+  const reddito = process.argv[2] || 42000;
   const regione = regioni[8];
   const coniugueAcarico = false;
   const figliAcaricoInf3 = 0;
