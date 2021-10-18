@@ -4,7 +4,7 @@ function main() {
     'Umbria', 'Valle d\'Aosta', 'Veneto', 'Provincia di Bolzano'];
   // EDIT BELOW THIS LINE -------------
   const reddito = process.argv[2] || 42000;
-  const regione = regioni[8];
+  const regione = regioni[8]; // Lombardia
   const coniugueAcarico = false;
   const figliAcaricoInf3 = 0;
   const figliAcaricoSup3 = 0;
@@ -12,7 +12,7 @@ function main() {
   const figliHandicapSup3 = 0;
   const percentualeCaricoFigli = 100;
   const altriFamiliariCarico = 0;
-  const numMensilita = 14;
+  const numMensilita = 13;
   const giorniLavorativi = 365;
   // DON'T EDIT BELOW THIS LINE --------
 
