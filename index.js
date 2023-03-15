@@ -4,6 +4,7 @@ function main() {
     'Umbria', 'Valle d\'Aosta', 'Veneto', 'Provincia di Bolzano'];
   // EDIT BELOW THIS LINE -------------
   const reddito = process.argv[2] || 42000;
+  const numMensilita = process.argv[3] || 13;
   const regione = regioni[8]; // Lombardia
   const coniugueAcarico = false;
   const figliAcaricoInf3 = 0;
@@ -12,7 +13,6 @@ function main() {
   const figliHandicapSup3 = 0;
   const percentualeCaricoFigli = 100;
   const altriFamiliariCarico = 0;
-  const numMensilita = 13;
   const giorniLavorativi = 365;
   // DON'T EDIT BELOW THIS LINE --------
 
@@ -38,8 +38,10 @@ function main() {
   }
   const stipendioAnnuale = imponibile - irpefNetta;
   const stipendioMensile = stipendioAnnuale / numMensilita;
-  console.log('Netto annuale:', stipendioAnnuale);
-  console.log('Netto mensile:', stipendioMensile);
+  console.log('USAGE: [LORDO_ANNUALE] [MENSILITA]')
+  console.log('Lordo annuale inserito:', reddito);
+  console.log(`Netto annuale:`, stipendioAnnuale.toFixed(2));
+  console.log(`Netto mensile (per ${numMensilita} mensilità):`, stipendioMensile.toFixed(2));
 }
 
 function calcolaIrpefStatale(imponibile) {
